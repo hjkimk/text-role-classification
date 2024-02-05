@@ -1,0 +1,39 @@
+{
+    "no_cuda": false,
+    "debug_mode": false,
+    "loading_script": "/LayoutLMv3/dataset.py",
+    "datasets": ["ICPR2022Real", "CHIME-R", "DeGruyter", "EconBiz"],
+    "model_name": "layoutlmv3_base",
+    "pretrained_model": "microsoft/layoutlmv3-base",
+    "classifier": "linear",
+    "special_tokens": ["\u201c", "\u201d"],
+    "metric": "seqeval",
+    "return_entity_level_metrics": false,
+    "combine_type": null,
+    "eval_mode": false,
+    "transforms_augmentations": {
+        "adjust_noise": {
+            "num_pixels_min": 30,
+            "num_pixels_max": 10000
+        },
+        "insert_chars": {
+            "num_words": 5
+        },
+        "delete_chars": {
+            "max_del_len": 5,
+            "num_words": 5,
+            "min_word_len": 10
+        }
+    },
+    "transforms_balancing": ["cutout"],
+    "concat_datasets": true,
+    "experiment_mode": false,
+    "output_dir": "/LayoutLMv3/outputs",
+    "max_steps": 10000,
+    "batch_size": 2,
+    "learning_rate": [2e-5],
+    "logging_dir": "/LayoutLMv3/logs",
+    "logging_strategy": "steps",
+    "logging_steps": 100,
+    "gradient_accumulation_steps": 16
+}

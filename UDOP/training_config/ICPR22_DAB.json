@@ -1,0 +1,46 @@
+{
+    "no_cuda": false,
+    "debug_mode": false,
+    "num_gpu": 1,
+    "loading_script": "/UDOP/dataset.py",
+    "datasets": ["ICPR2022Real", "CHIME-R", "DeGruyter", "EconBiz"],
+    "model_name": "udop_unimodel_large_224",
+    "pretrained_model": "",
+    "classifier": "linear",
+    "classifier_dropout": null,
+    "hidden_dropout_prob": 0.1,
+    "special_tokens": ["\u201c", "\u201d"],
+    "metric": "seqeval",
+    "return_entity_level_metrics": false,
+    "combine_type": null,
+    "eval_mode": false,
+    "transforms_augmentations": {
+        "adjust_noise": {
+            "num_pixels_min": 30,
+            "num_pixels_max": 10000
+        },
+        "insert_chars": {
+            "num_words": 5
+        },
+        "delete_chars": {
+            "max_del_len": 5,
+            "num_words": 5,
+            "min_word_len": 10
+        }
+    },
+    "transforms_balancing": ["cutout"],
+    "concat_datasets": true,
+    "experiment_mode": false,
+    "output_dir": "/UDOP/outputs",
+    "max_steps": 20000,
+    "warmup_steps": 1000,
+    "batch_size": 2,
+    "learning_rate": [2e-4],
+    "weight_decay": 1e-2,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.98,
+    "logging_dir": "/UDOP/logs",
+    "logging_strategy": "steps",
+    "logging_steps": 1000,
+    "gradient_accumulation_steps": 8
+}
