@@ -15,7 +15,7 @@ Text role classification involves classifying the semantic role of textual eleme
     - ICPR22_DAB = finetuning on only ICPR22 dataset with data augmentation and balancing methods
 
 ## Datasets:
-CHIME-R, DeGruyter, EconBiz, and ICPR22-N datasets can be downloaded from here: ___.\
+CHIME-R, DeGruyter, EconBiz, and ICPR22-N datasets can be downloaded from here: (todo: add zenodo dataset link).\
 ICPR22 dataset can be downloaded from here: https://chartinfo.github.io/toolsanddata_2022.html. 
 
 ## Example:
