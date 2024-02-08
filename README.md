@@ -16,7 +16,10 @@ Text role classification involves classifying the semantic role of textual eleme
 
 ## Datasets:
 * The datasets directory includes the images and annotations for CHIME-R, EconBiz, and ICPR22-N.
-* For DeGruyter, only the annotations are provided. The images can be separately downloaded here: https://www.degruyter.com/ 
+* For DeGruyter, only the annotations are provided. The images can be separately downloaded here: https://www.degruyter.com/
+* The contributors for the datasets CHIME-R, DeGruyter, and EconBiz: Hye Jin Kim & Falk Böschen
+     * Falk Böschen, Tilman Beck, Ansgar Scherp: Survey and empirical comparison of different approaches for text extraction from scholarly figures. Multim. Tools Appl. 77(22): 29475-29505 (2018)
+DOI: https://doi.org/10.1007/s11042-018-6162-7
 * The images and annotations for ICPR22 train and test datasets can be downloaded here: https://chartinfo.github.io/toolsanddata_2022.html
 
 ## Example:
